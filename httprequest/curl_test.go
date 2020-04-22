@@ -30,7 +30,7 @@ func TestHttpPost(t *testing.T) {
 	if err != nil {
 		t.Fatal("ReadAll error:", err)
 	}
-	t.Fatal(string(bodyByte))
+	t.Log(string(bodyByte))
 }
 
 func TestHttpGet(t *testing.T) {
@@ -48,5 +48,5 @@ func TestHttpGet(t *testing.T) {
 	if err != nil {
 		t.Fatal("ReadAll error:", err)
 	}
-	t.Fatal(string(bodyByte))
+	t.Log(string(bodyByte))
 }

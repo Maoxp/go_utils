@@ -8,11 +8,11 @@ func TestBasename(t *testing.T) {
 	var str string = "/usr/local/ttt/work/one.jpg"
 	var ext string
 	ext = Basename(str, ".jpg")
-	t.Errorf(ext)
+	t.Log(ext)
 	ext = Basename("/", "")
-	t.Errorf(ext)
+	t.Log(ext)
 	ext = Basename("/usr/local", "")
-	t.Errorf(ext)
+	t.Log(ext)
 	ext = Basename(".", "")
-	t.Errorf(ext)
+	t.Log(ext)
 }

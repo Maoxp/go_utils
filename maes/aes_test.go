@@ -16,7 +16,7 @@ func TestEncrypt(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	t.Fatal(encryptedData)
+	t.Log(encryptedData)
 
 }
 
@@ -29,5 +29,5 @@ func TestDecrypt(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	t.Fatal(data)
+	t.Log(data)
 }
